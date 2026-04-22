@@ -2,7 +2,7 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 
 # Settings - change these to whatever you want!
-ticker = "TSLA"
+ticker = "APPL"
 start_date = "2024-01-01"
 end_date = "2025-01-01"
 
