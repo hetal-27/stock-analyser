@@ -1,10 +1,11 @@
+
 import yfinance as yf
 import matplotlib.pyplot as plt
 
 # Settings - change these to whatever you want!
-ticker = "APPL"
-start_date = "2024-01-01"
-end_date = "2025-01-01"
+ticker = input("Enter ticker symbol (e.g. AAPL, TSLA, MSFT): ").upper()
+start_date = input("Enter start date (YYYY-MM-DD): ")
+end_date = input("Enter end date (YYYY-MM-DD): ")
 
 # Download stock data
 data = yf.download(ticker, start=start_date, end=end_date)
@@ -26,3 +27,4 @@ plt.legend()
 plt.grid(True)
 plt.savefig("apple_chart.png")
 print("Chart saved!")
+
